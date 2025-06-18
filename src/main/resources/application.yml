@@ -2,12 +2,13 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
+
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/TuralNazarov/online-shop-microservices
+          uri: https://github.com/TuralNazarov/online-shop-microservices.git
           default-label: main
           clone-on-start: true
-  application:
-    name: config-server
