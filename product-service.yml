@@ -2,5 +2,7 @@ server:
   port: 8081
 
 spring:
-  application:
-    name: product-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: tural123
+    password: tural123
